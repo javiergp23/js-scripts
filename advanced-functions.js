@@ -37,3 +37,45 @@ handler.arrowGreeting();
 (function () {
     console.log('IIFE')
 })();
+
+(() => {
+    console.log('IIFE with arrow')
+})();
+
+//Parametros rest (...)before
+
+function sum(...numbers){
+    let result = 0;
+    for(let number of numbers){
+        result += number
+    }
+    return result;
+}
+
+console.log(sum(1,2,3,4,5))
+
+
+// Spread operator (...)after
+const numbers = [1,2,3,4,5];
+function sumwithSpread(a, b, c){
+    return a + b + c;
+}
+
+console.log(sumwithSpread(...numbers))
+
+
+//Closures 
+
+function makeArr(){
+    let counter = 0;
+    return function(){
+        counter++;
+        console.log(counter)
+    }
+}
+
+const counter = makeArr();
+
+counter();
+counter();
+counter();
