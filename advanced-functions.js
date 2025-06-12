@@ -81,7 +81,7 @@ counter();
 counter();
 
 
-// Recursividad
+// Recursividad //
 
 function factorial(n){
     if(n <= 1){
@@ -91,3 +91,25 @@ function factorial(n){
 }
 
 console.log(factorial(5))
+
+//Callbacks
+
+function processData(data, callback){
+    const result = sum(...data)
+    callback(result)
+}
+
+function processResult(result){
+    console.log(result)
+}
+function processResult2(result){
+    console.log(`Mi resultado es: ${result}`)
+}
+
+processData([1,2,3], processResult)
+processData([1,2,3], processResult2)
+processData([1,2,3], (result) => {
+console.log(`El resultado de la callback arrow function es: ${result}`)
+})
+
+
