@@ -48,3 +48,27 @@ console.log(sorted);
 
 let unsortedNum = [4,1,5,3,2]
 console.log(unsortedNum.sort((a, b) => a - b))
+
+//reverse 
+console.log(sorted.reverse())
+
+//Operaciones de busqueda
+
+//includes
+console.log(unsortedNum.includes(4))
+
+//find
+let arr2 = [2, 3, 4, 5, 6, 7]
+console.log(arr2.find(element => element % 2 === 0))
+
+//findIndex
+let firstEvenIndex = arr2.findIndex(element => element % 2 === 0)
+console.log(firstEvenIndex)
+
+//Sets avanzados _______________________________________________________________________
+
+const numbersArray = [1, 2, 3, 4, 5, 6, 6];
+const numbersSet = [...new Set(numbersArray)]
+console.log(numbersSet)
+//Eliminacion de duplicados
+
