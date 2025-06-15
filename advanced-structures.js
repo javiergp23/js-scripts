@@ -2,7 +2,7 @@
 
 //arrays_________________________
 
-//métodos funcionales
+//métodos funcionales____
 
 //forEach
 
@@ -20,3 +20,8 @@ console.log(double)
 
 let filtered = numbers.filter(element => element % 2 === 0)
 console.log(filtered)
+
+//reduce
+
+let sum = numbers.reduce((previous, current) => previous + current, 0)
+console.log(sum)
