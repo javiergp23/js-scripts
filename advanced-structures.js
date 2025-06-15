@@ -25,3 +25,16 @@ console.log(filtered)
 
 let sum = numbers.reduce((previous, current) => previous + current, 0)
 console.log(sum)
+
+// manipulación
+// flat
+
+let nestedArray = [1, [2, [3, [4]]]];
+let flatArray = nestedArray.flat(1);
+console.log(flatArray);
+
+// flatMap
+
+let flatMapArray = ["Hola mundo", "chao todo"]
+let restulMapArraay = flatMapArray.flatMap(element => element.split(" "))
+console.log(restulMapArraay)
