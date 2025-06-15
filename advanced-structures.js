@@ -38,3 +38,10 @@ console.log(flatArray);
 let flatMapArray = ["Hola mundo", "chao todo"]
 let restulMapArraay = flatMapArray.flatMap(element => element.split(" "))
 console.log(restulMapArraay)
+
+//ordenación
+//Sort
+
+let unsorted = ["b", "c", "a", "d"];
+let sorted = unsorted.sort();
+console.log(sorted);
