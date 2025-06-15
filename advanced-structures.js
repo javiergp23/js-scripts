@@ -45,3 +45,6 @@ console.log(restulMapArraay)
 let unsorted = ["b", "c", "a", "d"];
 let sorted = unsorted.sort();
 console.log(sorted);
+
+let unsortedNum = [4,1,5,3,2]
+console.log(unsortedNum.sort((a, b) => a - b))
