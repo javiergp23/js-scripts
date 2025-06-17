@@ -79,3 +79,8 @@ console.log(union)
 
 //Intersección
 new Set()
+
+const setC = new Set([1,2,3])
+const setD = new Set([3, 4,5,6])
+const intersection = new Set([...setC].filter(x => setD.has(x)))        
+console.log(intersection)
