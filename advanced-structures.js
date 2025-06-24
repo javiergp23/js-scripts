@@ -92,3 +92,32 @@ let myMap = new Map([
 ]);
 
 myMap.forEach((value, key) => console.log(`${key}: ${value}`))
+
+// conversión
+
+//mapa a array
+
+const arrayFromMap = Array.from(myMap)
+console.log(arrayFromMap)
+
+// Mapa a objeto
+
+const objectFromMap = Object.fromEntries(myMap);
+console.log(objectFromMap)
+
+const mapFromObject = new Map(Object.entries(objectFromMap));
+
+
+//Prototipos
+
+let person = {
+    name: "Eduardo",
+    age: 30,
+    greet() {
+        console.log(`Hola, soy: ${this.name}`)
+    }
+}
+
+console.log(person.greet())
+
+console.log(Object.getPrototypeOf(person))
