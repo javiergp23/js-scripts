@@ -78,9 +78,17 @@ const union = new Set([...setA, ...setB])
 console.log(union)
 
 //Intersección
-new Set()
+const nuevoSet = [...new Set(numbersArray)]
+console.log(nuevoSet)
 
-const setC = new Set([1,2,3])
-const setD = new Set([3, 4,5,6])
-const intersection = new Set([...setC].filter(x => setD.has(x)))        
-console.log(intersection)
+// - Iteración 
+
+//Maps avanzados
+
+let myMap = new Map([
+    ["a", 1],
+    ["b", 2],
+    ["c", 3]
+]);
+
+myMap.forEach((value, key) => console.log(`${key}: ${value}`))
